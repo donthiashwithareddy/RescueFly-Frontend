@@ -3,7 +3,7 @@ const API = (
     localStorage.getItem("rescuefly_api") ||
     (location.protocol === "file:"
         ? "http://localhost:8080/api"
-        : "https://YOUR-RENDER-BACKEND-URL.onrender.com/api")
+        : "https://rescuefly-backend.onrender.com/api")
 ).replace(/\/$/, "");
 
 const token = () => localStorage.getItem("rescuefly_token");
